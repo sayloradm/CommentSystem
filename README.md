@@ -1,7 +1,6 @@
-# A minimal comment system
+# ESOF 423 Group 4
+## Alex Sutherland
+## Adam Saylor
+## Ryan Pallman
 
-## download and cd into comment-frontend then run 'npm start' to start frontend
-## download and cd into comment-backend then run 'npm start' to start backend
-## Env files for frontend and backend will need to be configured before use
-
-### cd into cypress and run 'npx cypress open' to run frontend tests
+ 
