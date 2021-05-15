@@ -1,5 +1,5 @@
 
-name: Test all functions
+name: Test all functions nightly
 on:
   schedule:
     - cron:  '0 1 * * *'
