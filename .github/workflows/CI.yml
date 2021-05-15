@@ -1,0 +1,16 @@
+
+name: Test all functions
+on: [push]
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        # https://github.com/cypress-io/github-action
+      - name: Cypress run
+        uses: cypress-io/github-action@v2
+        with:
+          record: true
+          build: npm run build
+          start: npm start
