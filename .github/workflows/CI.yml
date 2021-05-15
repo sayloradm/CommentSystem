@@ -12,5 +12,3 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           record: true
-          build: npm run build
-          start: npm start
