@@ -1,7 +1,6 @@
+
 name: Test all functions
-on:
-  schedule:
-    - cron:  '0 1 * * *'
+on: [push]
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
@@ -15,4 +14,3 @@ jobs:
           record: true
           build: npm run build
           start: npm start
-
