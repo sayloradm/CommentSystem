@@ -1,5 +1,7 @@
 name: Test all functions nightly
-on: 0 0 * * *
+on:
+   schedule:
+      - cron:  '0 0 * * *'
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
