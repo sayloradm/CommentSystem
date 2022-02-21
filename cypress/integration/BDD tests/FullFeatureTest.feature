@@ -44,11 +44,6 @@ Scenario: User can delete a comment
     And I change the comment
     Then The comment reposts
 
-  Scenario: User can navigate to documentation
-    Given I want to see documentation
-    When I click the link
-    Then I am at documentation
-
   Scenario: User can navigate to the Cypress Dashboard
     Given I want to see Cypress Dashboard
     When I click the cypress link
