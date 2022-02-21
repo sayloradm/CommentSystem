@@ -5,7 +5,7 @@ Given('I click dark mode', () => {
     cy.intercept("GET", "/api/comments").as("getComments");
     cy.intercept("POST", "/api/comments").as("makeComment");
 
-    cy.visit('https://acommentapi.com/');
+    cy.visit('http://acommentapi.com/');
     cy.wait("@getComments");
 
     cy.get("button:contains(Toggle dark mode)").click();

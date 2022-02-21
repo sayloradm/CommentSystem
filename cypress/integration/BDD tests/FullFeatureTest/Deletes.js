@@ -19,7 +19,7 @@ Given('I have a comment', () => {
     cy.intercept("GET", "/api/comments").as("getComments");
     cy.intercept("POST", "/api/comments").as("makeComment");
 
-    cy.visit('https://acommentapi.com/');
+    cy.visit('http://acommentapi.com/');
     cy.wait("@getComments");
 
     cy.get('button:contains(Add Comment)').click()

@@ -23,7 +23,7 @@ Given('I navigate to acommentapi', () => {
     cy.intercept("GET", "/api/comments").as("getComments");
     cy.intercept("POST", "/api/comments").as("makeComment");
 
-    cy.visit('https://acommentapi.com/');
+    cy.visit('http://acommentapi.com/');
     cy.wait("@getComments");
 })
 

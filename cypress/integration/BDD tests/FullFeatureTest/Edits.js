@@ -10,7 +10,7 @@ Given('I want to edit a comment', () => {
     cy.intercept("GET", "/api/comments").as("getComments");
     cy.intercept("PUT", "/api/comments/edit").as("makeEdit");
 
-    cy.visit('https://acommentapi.com/');
+    cy.visit('http://acommentapi.com/');
     cy.wait("@getComments");
 })
 

@@ -9,7 +9,7 @@ Given('I have a comment I want to like', () => {
     cy.intercept("GET", "/api/comments").as("getComments");
     cy.intercept("PUT", "/api/comments").as("addLike");
 
-    cy.visit('https://acommentapi.com/');
+    cy.visit('http://acommentapi.com/');
     cy.wait("@getComments");
 })
 
