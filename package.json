@@ -18,5 +18,8 @@
     },
     "cypress-cucumber-preprocessor": {
         "nonGlobalStepDefinitions": true
+    },
+    "dependencies": {
+        "react-tinder-card": "^1.4.5"
     }
 }

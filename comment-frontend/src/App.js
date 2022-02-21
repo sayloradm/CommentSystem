@@ -118,7 +118,7 @@ class App extends Component {
 			<div className="container">
 				<h3> <u> PLEASE READ! - </u> </h3>
 				<h4>- The video below is a placeholder to show how users can interact with a post using comments.</h4>
-					<h4>- Documentation, Cypress Dashboard, and Github may be viewed using these links&nbsp;
+					<h4>- Cypress Dashboard and Github Repo may be viewed using these links&nbsp;
 						{[DropdownButton].map((DropdownType, idx) => (
 							<DropdownType
 								as={ButtonGroup}
@@ -128,8 +128,6 @@ class App extends Component {
 								variant="secondary"
 								title="Links"
 							>
-								<Dropdown.Item href="https://backend-309717.wm.r.appspot.com/docs/">Documentation</Dropdown.Item>
-								<Dropdown.Divider />
 								<Dropdown.Item href="https://dashboard.cypress.io/projects/racs8y/runs?branches=%5B%5D&committers=%5B%5D&flaky=%5B%5D&page=1&status=%5B%5D&tags=%5B%5D&timeRange=%7B%22startDate%22%3A%221970-01-01%22%2C%22endDate%22%3A%222038-01-19%22%7D">Cypress Dashboard</Dropdown.Item>
 								<Dropdown.Divider />
 								<Dropdown.Item href="https://github.com/sayloradm/CommentSystem">Github</Dropdown.Item>
