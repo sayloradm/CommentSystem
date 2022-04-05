@@ -10,7 +10,7 @@ Given('I want to edit a comment', () => {
     cy.intercept("GET", "/api/comments").as("getComments");
     cy.intercept("PUT", "/api/comments/edit").as("makeEdit");
 
-    cy.visit('http://acommentapi.com/');
+    cy.visit('https://frontend-342222.uw.r.appspot.com/');
     cy.wait("@getComments");
 })
 
@@ -36,7 +36,7 @@ Given('I want to edit a reply', () => {
     cy.intercept("GET", "/api/comments").as("getComments");
     cy.intercept("PUT", "/api/comments/edit").as("makeEdit");
 
-    cy.visit('https://acommentapi.com/');
+    cy.visit('https://frontend-342222.uw.r.appspot.com/');
     cy.wait("@getComments");
 })
 

@@ -9,7 +9,7 @@ Given('I have a comment I want to like', () => {
     cy.intercept("GET", "/api/comments").as("getComments");
     cy.intercept("PUT", "/api/comments").as("addLike");
 
-    cy.visit('http://acommentapi.com/');
+    cy.visit('https://frontend-342222.uw.r.appspot.com/');
     cy.wait("@getComments");
 })
 
@@ -35,7 +35,7 @@ Given('I have a reply I want to like', () => {
     cy.intercept("GET", "/api/comments").as("getComments");
     cy.intercept("PUT", "/api/comments").as("addLike");
 
-    cy.visit('https://acommentapi.com/');
+    cy.visit('https://frontend-342222.uw.r.appspot.com/');
     cy.wait("@getComments");
 })
 

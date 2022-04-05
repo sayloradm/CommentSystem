@@ -66,14 +66,6 @@ Then('The comment posts', () => {
     cy.get(`.container.comments:contains(${commentName})`).should("contain", commentName).and("contain", commentBody)
 })
 
-Given('I navigate to acommentapi', () => {
-    cy.intercept("GET", "/api/comments").as("getComments");
-    cy.intercept("POST", "/api/comments").as("makeComment");
-
-    cy.visit('https://acommentapi.com/');
-    cy.wait("@getComments");
-})
-
 Then('I want to add a reply', () => {
     cy.get('button:contains(Reply)').first().click()
 })
